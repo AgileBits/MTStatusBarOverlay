@@ -177,6 +177,8 @@ typedef enum MTMessageType {
 // restores the state from NSUserDefaults
 - (void)restoreState;
 
+- (void)setShrinked:(BOOL)shrinked animated:(BOOL)animated;
+
 @end
 
 

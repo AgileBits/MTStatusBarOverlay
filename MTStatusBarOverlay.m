@@ -317,7 +317,7 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
          detailView_.layer.shadowRadius = 6.0f;
          detailView_.layer.shadowOffset = CGSizeMake(0, 3);*/
         
-		// Detail Text label
+		// Detail Text label    
 		detailTextView_ = [[UITextView alloc] initWithFrame:CGRectMake(0, kStatusBarHeight,
                                                                        kDefaultDetailViewFrame.size.width, kDefaultDetailViewFrame.size.height - kStatusBarHeight)];
 		detailTextView_.backgroundColor = [UIColor clearColor];
@@ -435,13 +435,13 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 												 selector:@selector(didChangeStatusBarFrame:)
 													 name:UIApplicationWillChangeStatusBarFrameNotification object:nil];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self 
-                                                 selector:@selector(applicationDidBecomeActive:)
-                                                     name:UIApplicationDidBecomeActiveNotification object:nil];
-        
-        [[NSNotificationCenter defaultCenter] addObserver:self 
-                                                 selector:@selector(applicationWillResignActive:)
-                                                     name:UIApplicationWillResignActiveNotification object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self 
+//                                                 selector:@selector(applicationDidBecomeActive:)
+//                                                     name:UIApplicationDidBecomeActiveNotification object:nil];
+//        
+//        [[NSNotificationCenter defaultCenter] addObserver:self 
+//                                                 selector:@selector(applicationWillResignActive:)
+//                                                     name:UIApplicationWillResignActiveNotification object:nil];
     }
     
 	return self;
@@ -1137,16 +1137,16 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 #pragma mark UIApplication Notifications
 ////////////////////////////////////////////////////////////////////////
 
-- (void)applicationWillResignActive:(NSNotification *)notifaction {
-    // We hide temporary when the application resigns active s.t the overlay
-    // doesn't overlay the Notification Center. Let's hope this helps AppStore 
-    // Approval ...
-    [self hideTemporary];
-}
-
-- (void)applicationDidBecomeActive:(NSNotification *)notifaction {
-    [self show];
-}
+//- (void)applicationWillResignActive:(NSNotification *)notifaction {
+//    // We hide temporary when the application resigns active s.t the overlay
+//    // doesn't overlay the Notification Center. Let's hope this helps AppStore 
+//    // Approval ...
+//    [self hideTemporary];
+//}
+//
+//- (void)applicationDidBecomeActive:(NSNotification *)notifaction {
+//    [self show];
+//}
 
 ////////////////////////////////////////////////////////////////////////
 #pragma mark -
