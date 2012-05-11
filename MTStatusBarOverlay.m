@@ -231,8 +231,8 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 - (void)didChangeStatusBarFrame:(NSNotification *)notification;
 
 // Fix to not overlay Notification Center
-- (void)applicationDidBecomeActive:(NSNotification *)notifaction;
-- (void)applicationWillResignActive:(NSNotification *)notifaction;
+//- (void)applicationDidBecomeActive:(NSNotification *)notifaction;
+//- (void)applicationWillResignActive:(NSNotification *)notifaction;
 
 @end
 
