@@ -983,6 +983,7 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
                          
 						 // update status bar background
 						 [self setStatusBarBackgroundForStyle:[UIApplication sharedApplication].statusBarStyle];
+						 [self saveStateSynchronized:NO];
 					 }];
 }
 
