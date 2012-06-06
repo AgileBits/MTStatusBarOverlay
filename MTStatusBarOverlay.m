@@ -285,6 +285,9 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 			statusBarFrame.size.width = 320.f;
 		}
         
+		// Adding a fake rootViewController to avoid run-time warning
+		self.rootViewController = [[UIViewController alloc] init];
+
 		// Place the window on the correct level and position
         self.windowLevel = UIWindowLevelStatusBar+1.f;
         self.frame = statusBarFrame;
