@@ -407,7 +407,7 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 		statusLabel1_.font = [UIFont boldSystemFontOfSize:kStatusLabelSize];
 		statusLabel1_.textAlignment = NSTextAlignmentCenter;
 		statusLabel1_.numberOfLines = 1;
-		statusLabel1_.lineBreakMode = UILineBreakModeTailTruncation;
+		statusLabel1_.lineBreakMode = NSLineBreakModeTailTruncation;
 		statusLabel1_.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		[self addSubviewToBackgroundView:statusLabel1_];
         
@@ -418,7 +418,7 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 		statusLabel2_.font = [UIFont boldSystemFontOfSize:kStatusLabelSize];
 		statusLabel2_.textAlignment = NSTextAlignmentCenter;
 		statusLabel2_.numberOfLines = 1;
-		statusLabel2_.lineBreakMode = UILineBreakModeTailTruncation;
+		statusLabel2_.lineBreakMode = NSLineBreakModeTailTruncation;
 		statusLabel2_.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		[self addSubviewToBackgroundView:statusLabel2_];
         
